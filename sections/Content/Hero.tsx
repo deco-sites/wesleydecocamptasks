@@ -3,20 +3,20 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface CTA {
   id?: string;
-  href: string;
-  text: string;
-  variant: "Normal" | "Reverse";
+  href?: string;
+  text?: string;
+  variant?: "Normal" | "Reverse";
 }
 
 export interface Props {
   /**
    * @format html
    */
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   image?: ImageWidget;
   placement: "left" | "right";
-  cta: CTA[];
+  cta?: CTA[];
 }
 
 const PLACEMENT = {
@@ -35,7 +35,7 @@ export default function HeroFlats({
     <div>
       <div class="mx-auto flex flex-col items-center gap-8">
         <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+          class={`flex w-full xl:mx-auto py-20 mx-5 md:mx-10 z-10 bg-black ${
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
@@ -60,13 +60,13 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="inline-block text-[80px] leading-[100%] font-medium tracking-[-2.4px]"
+              class="inline-block text-[80px] leading-[100%] font-medium tracking-[-2.4px] text-white"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
             </div>
-            <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
+            <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%] text-white">
               {description}
             </p>
             <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">

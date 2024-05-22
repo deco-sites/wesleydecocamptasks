@@ -67,7 +67,7 @@ function Navbar(
 
   // Desktop header
   return (
-    <div class="hidden sm:grid sm:grid-cols-3 items-center border-b border-base-200 w-full px-6">
+    <div class="hidden sm:grid sm:grid-cols-3 items-center border-b border-base-200 w-full px-6 bg-black">
       <ul
         class={`flex gap-6 col-span-1 ${
           logoPosition === "left" ? "justify-center" : "justify-start"
@@ -97,7 +97,7 @@ function Navbar(
       </div>
       <div class="flex-none flex items-center justify-end gap-6 col-span-1">
         {!buttons?.hideSearchButton && (
-          <div class="flex items-center text-xs font-thin gap-1">
+          <div class="flex items-center text-xs font-thin gap-1 text-white">
             <SearchButton />SEARCH
           </div>
         )}
@@ -105,7 +105,7 @@ function Navbar(
         <Searchbar searchbar={searchbar} />
         {!buttons?.hideAccountButton && (
           <a
-            class="flex items-center text-xs font-thin"
+            class="flex items-center text-xs font-thin text-white"
             href="/account"
             aria-label="Account"
           >
@@ -117,7 +117,7 @@ function Navbar(
         )}
         {!buttons?.hideWishlistButton && (
           <a
-            class="flex items-center text-xs font-thin"
+            class="flex items-center text-xs font-thin text-white"
             href="/wishlist"
             aria-label="Wishlist"
           >

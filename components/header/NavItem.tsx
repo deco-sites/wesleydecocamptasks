@@ -9,11 +9,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   return (
     <li class="group flex items-center">
       <a href={url} class="py-6">
-        <span class="group-hover:underline text-xs font-thin">
+        <span class="group-hover:underline text-xs font-thin text-white">
           {name}
         </span>
       </a>
-
       {children && children.length > 0 &&
         (
           <div

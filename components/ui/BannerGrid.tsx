@@ -132,8 +132,6 @@ export default function BannnerGrid(props: Props) {
             <h2 class="text-lg leading-5 font-semibold uppercase">
               {title}
             </h2>
-
-            <div class="bg-[#e5e5ea] h-[1px] w-full ml-4"></div>
           </div>
         )}
       <div

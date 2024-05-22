@@ -1,1 +1,1 @@
-{"name":"Culturas","path":"/culturas","sections":[],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{"name":"Culturas","path":"/culturas","sections":[{"__resolveType":"Header - 01"},{"__resolveType":"site/sections/Images/BannerGrid.tsx","title":"Black Jackets","itemsPerLine":{"mobile":2,"desktop":2},"borderRadius":{"desktop":"xl","mobile":"xl"}}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
